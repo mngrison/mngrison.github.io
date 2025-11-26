@@ -1,0 +1,372 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 20px;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.back-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.95em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.header-bar .language-selector {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.artwork-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artwork-header figure {
+    margin: 0;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.artwork-header figcaption {
+    margin-top: -5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Language Selector */
+.language-selector {
+    margin-left: auto;
+}
+
+.language-dropdown {
+    padding: 6px 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    font-weight: 600;
+    background: #444;
+    color: #fff;
+}
+
+/* Content */
+.content-area {
+    font-size: 1em;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.content-area figure {
+    margin: 20px auto;
+    width: 50%;
+    max-width: 900px;
+}
+
+.content-area figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-area figure figcaption {
+    margin-top: 8px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.figure {
+    float: right;
+    margin: 0 0 15px 15px;
+    max-width: 40%;
+    border: 1px solid #eee;
+    padding: 5px;
+    background: #fff;
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.figure .caption {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Clearfix for floats */
+.content-area::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Landing Page */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.artwork-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.artwork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    padding: 8px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: flex-end;
+    min-height: 280px;
+}
+
+.rotate-left-90 {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+    display: block;
+}
+
+.rotate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate-container .rotate-left-90 {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: clamp(240px, 60vh, 560px);
+}
+
+.card-image.rotate-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image.rotate-card .rotate-left-90 {
+    width: auto;
+    max-width: none;
+    height: auto;
+    max-height: 240px;
+    object-fit: contain;
+}
+
+.card-image.centered-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    width: 100%;
+    max-height: 280px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.card-image.empty {
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 0.88em;
+    font-style: italic;
+}
+
+.card-info {
+    padding: 8px 12px 10px;
+    line-height: 1.1;
+    margin-top: auto;
+}
+
+.card-info strong,
+.card-info em,
+.card-meta {
+    display: block;
+    margin: 0;
+}
+
+.card-info strong {
+    font-size: 0.92em;
+    margin-bottom: 1px;
+}
+
+.card-info em {
+    font-size: 0.88em;
+    margin-bottom: 1px;
+}
+
+.card-meta {
+    color: #666;
+    font-size: 0.88em;
+}
+
+.colophon-link-wrap {
+    text-align: center;
+    margin: 16px 0 24px;
+}
+
+.site-credit {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 0.67em;
+    color: #777;
+}
+
+/* Banner */
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner-text h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+.bottom-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.bottom-nav a:hover {
+    text-decoration: underline;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-nav .language-dropdown {
+    background: #555;
+    border-color: #666;
+}
+
+.lang-banner {
+    display: none;
+}
+
+.main-header {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.colophon {
+    text-align: center;
+    margin: 40px auto 20px;
+    padding: 20px 10px;
+    border-top: 1px solid #eee;
+}
+
+.colophon h3 {
+    margin-top: 0;
+}
+
+.colophon p {
+    margin: 10px auto;
+    max-width: 750px;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.partners img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .figure {
+        float: none;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .gallery-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
