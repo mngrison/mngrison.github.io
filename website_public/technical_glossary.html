@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Glossary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header-bar">
+        <a href="index.html" data-lang-link data-base-href="index.html" class="back-link">← Back to Exhibition</a>
+        <div class="language-selector">
+            <select id="language-dropdown" class="language-dropdown" aria-label="Select language">
+                <option value="fr">FR</option>
+                <option value="nl">NL</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+    </header>
+    <div class="container">
+        <div class="artwork-header">
+            <figure class="hero-figure">
+                <img class="main-image" src="images/01_1.jpg" alt="Glossary of imaging techniques"/>
+                <figcaption>
+                    <span data-lang-block="fr">Appareil de Macro-XRF en train de scanner une œuvre de Léon Spilliaert<br/>(photo : Marie-Noëlle Grison)</span>
+                    <span data-lang-block="nl" style="display:none">Een kunstwerk van Léon Spilliaert wordt gescand met een Macro-XRF-toestel<br/>(foto: Marie-Noëlle Grison)</span>
+                    <span data-lang-block="en" style="display:none">Macro-XRF device scanning an artwork by Léon Spilliaert<br/>(photo: Marie-Noëlle Grison)</span>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="content-area">
+            <div class="lang-content markdown" id="content-fr">
+## Glossaire des techniques d'imagerie
+
+### Macro-fluorescence des rayons X (Macro-XRF)
+
+Macro-fluorescence des rayons X (Macro-XRF) : Technique d'imagerie qui utilise des rayons X pour détecter et cartographier la présence de divers éléments chimiques dans une œuvre d'art. Il s'agit d'une technique non invasive, ce qui signifie qu'aucun contact entre l'appareil et la surface de l'objet n'est requis pour collecter les données. La réalisation d'un scan à haute résolution comme ceux présentés ici peut prendre jusqu'à 24 heures. Le résultat de ce procédé d'analyse est une série d'images en noir et blanc, une par élément : plus la concentration d'un élément est élevée, plus il apparaît en blanc sur l'image. Appliquée aux matériaux friables, la Macro-XRF a permis d'identifier de nombreux pigments inorganiques et charges qui entrent dans la composition des matériaux utilisés par les artistes.
+
+### Imagerie multispectrale, ou spectroscopie d'imagerie par réflectance (RIS)
+
+Imagerie multispectrale, ou spectroscopie d'imagerie par réflectance (RIS) : Tandis que la photographie classique ne capture que la lumière réfléchie par un objet dans le spectre de la lumière visible (c'est-à-dire la portion du spectre lumineux perceptible par l'oeil humain), l'imagerie multispectrale couvre une gamme plus étendue, allant de l'ultraviolet (UV) à l'infrarouge (IR). En analysant l'interaction de la lumière avec l'objet sur un plus large éventail de longueurs d'onde, certaines caractéristiques invisibles à l'oeil nu peuvent être mises en évidence et, dans certains cas, des pigments peuvent être identifiés, le tout sans jamais toucher l'œuvre d'art. Les images collectées sont en noir et blanc, mais peuvent ensuite faire l'objet d'un traitement plus poussé à l'aide de calculs statistiques (tels que l'analyse en composantes principales) et de visualisations en fausses couleurs, afin de faciliter l'interprétation des données.
+
+### Spectroscopie micro-Raman (SMR)
+
+Spectroscopie micro-Raman (SMR) : La SMR est une technique de mesure ponctuelle non invasive qui collecte des données sur des points très précis de l'œuvre, à la différence de la Macro-XRF et de l'imagerie multispectrale qui capturent tout ou partie de la surface de l'œuvre. Elle utilise un minuscule faisceau laser, focalisé à travers un microscope, pour étudier les pigments et autres matériaux. Lorsque la lumière laser interagit avec les molécules du pigment, elle se diffuse d'une manière unique, produisant une signature spectrale. Ce spectre est ensuite comparé à des spectres de référence issus de banques de données pour confirmer une identification. La SMR est couramment utilisée en complément de la Macro-XRF ou d'autres techniques spectroscopiques, afin de confirmer les résultats avec des données de haute précision. Dans certains cas, elle peut même identifier des pigments organiques, ce que la Macro-XRF ne peut pas détecter.
+            </div>
+            <div class="lang-content markdown" id="content-nl" style="display:none">
+## Woordenlijst van beeldvormingstechnieken
+
+### Macro-röntgenfluorescentie (Macro-XRF)
+
+Macro-röntgenfluorescentie (Macro-XRF): Een beeldvormingstechniek waarbij röntgenstralen worden gebruikt om de aanwezigheid van verschillende chemische elementen in een kunstwerk te detecteren en in kaart te brengen. Het is een niet-invasieve techniek, wat betekent dat er geen contact tussen het beeldvormingsapparaat en het oppervlak van het object nodig is om de gegevens te verzamelen. Het produceren van een scan met hoge resolutie, zoals de scans die hier worden getoond, kan tot 24 uur duren. Het resultaat van deze beeldvormingsprocedure is een reeks zwart-witbeelden, één per element: hoe hoger de concentratie van een element, hoe witter het in het beeld zal verschijnen. Toegepast op brokkelige media maakte Macro-XRF het mogelijk om veel van de anorganische pigmenten en vulstoffen te identificeren in de materialen die kunstenaars hanteren.
+
+### Multispectrale beeldvorming of reflectiespectroscopie (RIS)
+
+Multispectrale beeldvorming of reflectiespectroscopie (RIS): Terwijl gewone fotografie alleen het licht vastlegt dat door een object wordt gereflecteerd binnen het zichtbare lichtspectrum (dat wil zeggen het deel van het lichtspectrum dat het menselijk oog kan zien), bestrijkt multispectrale beeldvorming een breder spectrum, dat zich uitstrekt van ultraviolet (UV) tot infrarood (IR). Door de interactie van licht met het object over een breder spectrum van golflengten vast te leggen, kunnen sommige kenmerken die met het blote oog onzichtbaar zijn, worden weergegeven en in sommige gevallen kunnen pigmenten worden geïdentificeerd, zonder het kunstwerk aan te raken. De verzamelde beelden zijn in zwart-wit, maar kunnen verder worden verwerkt met behulp van statistische berekeningen (zoals hoofdcomponentenanalyse) en valse kleurenvisualisaties, om de interpretatie van de gegevens te ondersteunen.
+
+### Micro-Raman spectroscopie (MRS)
+
+Micro-Raman spectroscopie (MRS): MRS is een niet-invasieve meettechniek die gegevens verzamelt op zeer precieze punten op het kunstwerk, in tegenstelling tot Macro-XRF en RIS, die het gehele oppervlak of een deel van van het kunstwerk in beeld brengen. Het maakt gebruik van een kleine laserstraal, gefocust door een microscoop, om pigmenten en andere materialen te bestuderen. Wanneer het laserlicht in contact komt met de moleculen van het pigment, verspreidt het zich op een unieke manier, waardoor een 'vingerafdruk'-spectrum ontstaat. Dit spectrum wordt vervolgens vergeleken met bekende spectra uit materiaalbibliotheken om tot een identificatie te komen. MRS wordt routinematig gebruikt als aanvulling op Macro-XRF of andere spectroscopische technieken, om resultaten met zeer nauwkeurige gegevens te bevestigen. In sommige gevallen kan het zelfs organische pigmenten identificeren, iets wat Macro-XRF niet kan detecteren.
+            </div>
+            <div class="lang-content markdown" id="content-en" style="display:none">
+## Glossary of Imaging Techniques
+
+### Macro x-ray fluorescence (Macro-XRF)
+
+Macro x-ray fluorescence (Macro-XRF): An imaging technique that uses x-rays to detect and map the presence of various chemical elements in an artwork. It is a non-invasive technique, meaning that no contact between the imaging device and the surface of the object is required to collect the data. Producing a high resolution scan such as the ones presented here can take up to 24 hours. The result of this imaging procedure is a series of black and white images, one per element: the higher the concentration of an element, the whiter it will appear in the image. Applied to friable media, Macro-XRF enabled to identify many of the inorganic pigments and extenders that make up the materials used by the artists.
+
+### Multispectral imaging, or reflectance imaging spectroscopy (RIS)
+
+Multispectral imaging, or reflectance imaging spectroscopy (RIS): While regular photography only captures the light reflected off an object within the visible light spectrum (that is, the portion of the light spectrum that a human eye can see), multispectral imaging covers a broader range, spanning from the ultraviolet (UV) to the infrared (IR). By recording the interaction of light with the object across a wider range of wavelengths, some features invisible to the naked eye can be evidenced, and in some cases pigments can be identified, all this without ever touching the artwork. The collected images are black and white, but can be further processed using statistical computations (such as principal component analysis) and false colours visualisations, to help with the interpretation of the data.
+
+### Micro-Raman spectroscopy (MRS)
+
+Micro-Raman spectroscopy (MRS): MRS is a non-invasive point measurement technique which collects data on very precise spots on the artwork, unlike Macro-XRF and RIS which capture all or part of the surface of the artwork. It uses a tiny laser beam, focused through a microscope, to study pigments and other materials. When the laser light interacts with the pigment's molecules, it scatters in a unique way, producing a "fingerprint" spectrum. This spectrum is then compared with known spectra from materials libraries to secure an identification. MRS is routinely used in complement to Macro-XRF or other spectroscopic techniques, to confirm results with high precision data. In some cases, it can even identify organic pigments, something Macro-XRF cannot detect.
+            </div>
+        </div>
+        <div class="site-credit">
+    <span data-lang-block="fr"><strong>Design et développement web</strong> Marie-Noëlle Grison & Robert G. Erdmann</span>
+    <span data-lang-block="nl" style="display:none"><strong>Websiteontwerp en realisatie</strong> Marie-Noëlle Grison & Robert G. Erdmann</span>
+    <span data-lang-block="en" style="display:none"><strong>Website design and implementation</strong> Marie-Noëlle Grison & Robert G. Erdmann</span>
+</div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
